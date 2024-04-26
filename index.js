@@ -2,7 +2,7 @@
 
 function rmTashkeel() {
   let text = document.getElementById("input")?.value;
-  text = text.replace(/([^\u0621-\u064A\u0660-\u0669a-zA-Z 0-9\r\n])/g, "");
+  text = text.replace(/([\u064B-\u0652])/g, "");
   const output = document.getElementById("output");
   output.value = text;
 }
